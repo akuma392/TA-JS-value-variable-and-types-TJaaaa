@@ -93,7 +93,10 @@ Example:
 let num1 = Number(prompt("Enter the first number"));
 let num2 = Number(prompt("Enter the 2nd number"));
 
-alert(`num1 is greater than num2 ${num1>num2}`);
-if (num1 == true || num1 == null || num1 == undefined || num2 == true || num2 == null || num2 == undefined ){
+// alert(`num1 is greater than num2 ${num1>num2}`);
+if ( isNaN(num1) || isNaN(num2)  ){
     alert("enter valid number");
+}
+else{
+    alert(num1 === num2);
 }
