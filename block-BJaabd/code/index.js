@@ -174,6 +174,18 @@ else{
 🎖Write a JavaScript conditional statement to find the sign (+, -) of product of three numbers. Take those three numbers from user using `prompt`. Display an alert box with the specified sign.
 */
 // [Your code goes here]
+let x = Number(prompt("enter the  1st number"));
+let y = Number(prompt("enter the  2nd number"));
+let z = Number(prompt("enter the  3rd number"));
+
+let product = x*y*z;
+
+if (product > 0){
+  alert(`product is positive number`);
+}
+else{
+  alert(`product is negative number`);
+}
 
 /* Calculator
  🎖Make a simple calculator with these functions. Using prompt, type conversion, if else statement. Use prompt to take the input from user i.e two numbers and an operation (Add, Sub, Mul, Div).
