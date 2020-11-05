@@ -16,4 +16,36 @@ var amount = 0;
 // your code goes here
 
 // ⛑ Answer of the above will `$334.76`.
-for
+let x = Number(prompt("enter the  1st number"));
+let y = Number(prompt("enter the  2nd number"));
+
+let calc = prompt("enter the operation (+, -, *, /)");
+
+switch (calc) {
+
+  case "+":
+    alert(`sum of 1st number and 2nd number is ${x+y}`);
+    break;
+  case "-":
+    if(y > x){
+      alert(`Number Two is larger then Number one`);
+    }  
+    else{
+      alert(`subtraction from 1st number to 2nd num is ${x-y}`);
+    }
+    break;
+    case "*":
+      alert(`sum of 1st number and 2nd number is ${x*y}`);
+      break; 
+      case "/":
+        if(y > x){
+          alert(`Number Two is larger then Number one`);
+        }  
+        else{
+          alert(`subtraction from 1st number to 2nd num is ${x/y}`);
+        }
+        break;     
+  default:
+    alert(`Enter valid operation`);
+    break;
+}
