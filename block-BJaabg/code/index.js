@@ -15,37 +15,23 @@ var bank_balance = 303.91;
 var amount = 0;
 // your code goes here
 
+
 // ⛑ Answer of the above will `$334.76`.
-let x = Number(prompt("enter the  1st number"));
-let y = Number(prompt("enter the  2nd number"));
 
-let calc = prompt("enter the operation (+, -, *, /)");
-
-switch (calc) {
-
-  case "+":
-    alert(`sum of 1st number and 2nd number is ${x+y}`);
-    break;
-  case "-":
-    if(y > x){
-      alert(`Number Two is larger then Number one`);
-    }  
-    else{
-      alert(`subtraction from 1st number to 2nd num is ${x-y}`);
-    }
-    break;
-    case "*":
-      alert(`sum of 1st number and 2nd number is ${x*y}`);
-      break; 
-      case "/":
-        if(y > x){
-          alert(`Number Two is larger then Number one`);
-        }  
-        else{
-          alert(`subtraction from 1st number to 2nd num is ${x/y}`);
-        }
-        break;     
-  default:
-    alert(`Enter valid operation`);
-    break;
+let tax = (amount * 0.08);  
+while (amount < bank_balance){
+    amount=amount + PHONE_PRICE +tax;
+    if (amount < SPENDING_THRESHOLD) {
+              amount = amount + ACCESSORY_PRICE ;
+   }
 }
+amount = amount + amount * 0.08 ;
+console.log(`${amount}`);
+
+ if (amount > bank_balance) {
+  alert(
+       "You can't afford this purchase");
+ }
+ else{
+     alert(`${amount}`);
+ }
